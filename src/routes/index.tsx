@@ -21,7 +21,7 @@ function Hero() {
 	return (
 		<section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-ink">
 			<img
-				src="/images/hero-sofa.jpg"
+				src="/images/hero-sofa.webp"
 				alt="A cozy sofa with two throw pillows, one cream and one rust-colored, bathed in warm sunlight."
 				className="absolute inset-0 h-full w-full object-cover"
 			/>
@@ -212,7 +212,7 @@ function ContactFooter() {
 	return (
 		<section className="relative flex min-h-[85vh] flex-col justify-between overflow-hidden px-6 py-10 sm:px-10 sm:py-14 lg:px-16">
 			<img
-				src="/images/footer-bookshelf.jpg"
+				src="/images/footer-bookshelf.webp"
 				alt="A wooden bookshelf filled with books and decorative vases in various earthy tones."
 				className="absolute inset-0 h-full w-full object-cover"
 			/>
