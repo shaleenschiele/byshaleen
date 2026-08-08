@@ -49,12 +49,12 @@ function About() {
 		<section className="bg-olive px-6 py-20 sm:px-10 md:py-28 lg:px-16">
 			<div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:gap-16">
 				<img
-					src="/images/about-portrait.jpg"
+					src="/images/about-portrait.webp"
 					alt="Shaleen, founder of byshaleen.com, wearing a striped shirt and a bandana, smiling at the camera while sitting at a table with a cocktail."
 					className="aspect-[5/6] w-full object-cover"
 				/>
 
-				<div className="text-cream">
+				<div className="text-wine">
 					<h2 className="font-display text-5xl uppercase tracking-wide sm:text-6xl">
 						About
 					</h2>
@@ -152,7 +152,7 @@ function Testimonials() {
 	return (
 		<section className="bg-dusty px-6 py-20 sm:px-10 md:py-28 lg:px-16">
 			<div className="mx-auto max-w-6xl">
-				<h2 className="font-display text-5xl uppercase tracking-wide text-white/30 sm:text-6xl md:text-7xl">
+				<h2 className="font-display text-5xl uppercase tracking-wide text-ink/70 sm:text-6xl md:text-7xl">
 					What former clients say
 				</h2>
 
