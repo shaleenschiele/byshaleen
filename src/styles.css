@@ -1,6 +1,19 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-ecru: #e0e0d5;
+  --color-cream: #f2dece;
+  --color-olive: #938d6c;
+  --color-wine: #490013;
+  --color-wine-dark: #33000d;
+  --color-dusty: #aabcc4;
+  --color-ink: #23303a;
+
+  --font-display: "Cormorant", ui-serif, Georgia, serif;
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
