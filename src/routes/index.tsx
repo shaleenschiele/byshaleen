@@ -159,7 +159,7 @@ function Testimonials() {
 				<div className="mt-12 grid gap-x-16 gap-y-14 md:grid-cols-2">
 					<Testimonial
 						names="Nathalie & Mateusz"
-						project="Project: Bedrrom"
+						project="Project: Bedroom"
 						quote="“Working with her on our bedroom renovation was a delight. She understood our style and needs, avoiding a one-size-fits-all approach. Flexible and open to feedback, she made us feel heard throughout the project. Her blend of creativity and client focus resulted in a uniquely personal space. I highly recommend her as an interior designer.”"
 					/>
 					<Testimonial
