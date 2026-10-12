@@ -17,6 +17,7 @@ const en = {
 		mainMenu: "Main menu",
 		openMenu: "Open menu",
 		closeMenu: "Close menu",
+		language: "Language",
 	},
 	hero: {
 		lines: ["Make your home"],
@@ -84,4 +85,81 @@ const en = {
 
 export type UiStrings = typeof en;
 
-export const UI: Record<Locale, UiStrings> = { en };
+const de: UiStrings = {
+	meta: {
+		title: "by.shaleen — Interior-Design-Studio",
+		description:
+			"Mieterfreundliches Interior Design in Berlin. Flat Therapy, Room Recipe, Full Design Service und Möbel-Sourcing mit by.shaleen.",
+	},
+	nav: {
+		about: "Über mich",
+		services: "Leistungen",
+		projects: "Projekte",
+		references: "Kundenstimmen",
+		contact: "Kontakt",
+		sections: "Abschnitte",
+		mainMenu: "Hauptmenü",
+		openMenu: "Menü öffnen",
+		closeMenu: "Menü schließen",
+		language: "Sprache",
+	},
+	hero: {
+		lines: ["Mach dein Zuhause"],
+		accent: "persönlich",
+		kicker: "Mieterfreundliches Design",
+		blurb:
+			"Kein Bohren. Kein Ärger mit dem Vermieter. Kein Risiko für die Kaution.",
+		masthead: { center: "Berlin · Interior Design", right: "Vor Ort & remote" },
+		alt: "Ein gemütliches Sofa mit zwei Kissen, eines in Creme, eines in Rostrot, im warmen Sonnenlicht.",
+	},
+	about: {
+		heading: "Über mich",
+		alt: "Shaleen, Gründerin von byshaleen.com, in gestreiftem Hemd und mit Bandana, lächelt in die Kamera und sitzt mit einem Cocktail an einem Tisch.",
+		paragraphs: [
+			"Acht Jahre Konzern haben mir Struktur und Strategie beigebracht. Mein Auge für Design hat den Rest erledigt.",
+			"Mein Stil lässt sich am besten als „Moody Modern“ beschreiben: satte Farben, Materialmix, organische Formen und alte Möbel, die friedlich neben neuen stehen.",
+			"Ich arbeite von Berlin aus, vor Ort wie auch remote, und habe mich auf mieterfreundliches Design (vor allem im Altbau) spezialisiert: Aus der Wohnung, die du mietest (ohne Bohren, ohne Ärger mit dem Vermieter, ohne Risiko für die Kaution), wird ein Ort, der sich wirklich nach dir anfühlt. Meist sind es kleine, gezielte Entscheidungen, die die schwere Arbeit erledigen, kein kompletter Umbau.",
+			"Wenn wir zusammenarbeiten, erwartet dich ein klarer Prozess, ein bisschen sanfter Widerspruch zu deinen eigenen Ideen, clevere Workarounds für alles, was sich baulich nicht ändern lässt, und, trotz des Ernstes, mit dem ich Kissenplatzierung nehme, ziemlich viel Spaß dabei.",
+		],
+	},
+	services: {
+		heading: "Leistungen",
+		subheading:
+			"Verfügbar für Termine vor Ort in ganz Berlin und remote weltweit.",
+		whatYouGet: "Das bekommst du",
+		notIncluded: "Nicht enthalten",
+		howItWorks: "So läuft’s ab",
+		goodToKnow: "Gut zu wissen",
+	},
+	projects: {
+		heading: "Projekte",
+		subheading:
+			"Ausgewählte Arbeiten, vom Altbau-Schlafzimmer bis zum Familienhaus.",
+		inProgress: "In Arbeit",
+		comingSoon: "Demnächst",
+		allProjects: "Alle Projekte",
+		nextProject: "Nächstes Projekt",
+		wantARoom: "Du wünschst dir so einen Raum?",
+		seeServices: "Zu den Leistungen",
+		notFound: "Projekt nicht gefunden",
+		location: "Ort",
+		space: "Raum",
+		scope: "Umfang",
+		status: "Status",
+	},
+	references: {
+		heading: "Was frühere Kund:innen sagen",
+		eyebrow: "Kundenstimmen",
+	},
+	contact: {
+		heading: "Noch Fragen?",
+		cta: "Kontakt aufnehmen",
+		rights: "Shaleen Schiele | Alle Rechte vorbehalten",
+		imprint: "Impressum",
+		dataProtection: "Datenschutz",
+		instagram: "by.shaleen auf Instagram",
+		alt: "Ein Holzregal voller Bücher und dekorativer Vasen in verschiedenen Erdtönen.",
+	},
+};
+
+export const UI: Record<Locale, UiStrings> = { en, de };

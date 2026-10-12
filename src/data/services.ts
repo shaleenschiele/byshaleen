@@ -58,6 +58,30 @@ const RAW_SERVICES: RawService[] = [
 				},
 				cta: { label: "Book now" },
 			},
+			de: {
+				title: "Flat Therapy",
+				tagline: "Eine Stunde. Ein Problem. Endlich gelöst.",
+				teaser: "89 € Einführungspreis",
+				intro: [
+					"Das Sofa, das am falschen Platz steht. Die Wandfarbe, die aus der Reihe tanzt. Die Ecke, mit der keiner etwas anzufangen weiß. Schick mir ein paar Fotos, wir besprechen alles im Videocall, und du gehst mit einer klaren To-do-Liste statt mit einem weiteren Pinterest-Board. Paare willkommen. Ich habe schon Schlimmeres geschlichtet als einen Teppich.",
+				],
+				included: [
+					"Online-Fragebogen, damit ich das Problem verstehe",
+					"60-Minuten-Videocall, um das Problem besser zu verstehen und konkrete Lösungen für deinen Raum zu finden",
+					"Eine schriftliche To-do-Liste und Zusammenfassung des Calls innerhalb von 48 Stunden, damit du die besprochenen Änderungen wirklich umsetzen kannst",
+				],
+				goodToKnow: [
+					"Wenn du innerhalb von 30 Tagen ein Room Recipe oder den Full Design Service buchst, wird die Gebühr für Flat Therapy vollständig angerechnet.",
+				],
+				price: {
+					headline: "89 €",
+					lines: [
+						"Einführungspreis bis 28. Februar 2027",
+						"Bei dir zu Hause in Berlin: 90 Min. für 229 € inkl. 19 % MwSt.",
+					],
+				},
+				cta: { label: "Jetzt buchen" },
+			},
 		},
 	},
 	{
@@ -155,6 +179,47 @@ const RAW_SERVICES: RawService[] = [
 				},
 				cta: { label: "Book Room Recipe now" },
 			},
+			de: {
+				title: "Room Recipe",
+				tagline: "Der Plan kommt von mir. Das Kochen übernimmst du.",
+				teaser: "549 € Einführungspreis",
+				intro: [
+					"Für alle, die sich den fertigen Raum nicht vorstellen können, aber gern selbst einkaufen und umräumen.",
+				],
+				included: [
+					"2 Moodboard-Optionen inkl. Farbpalette und Stoffvorschlägen",
+					"2D-Grundriss mit Möblierung",
+					"3D-Raumskizze mit deinen Möbelfavoriten (nicht fotorealistisch)",
+					"Einkaufsliste mit bis zu 10 Produkten, abgestimmt auf das, was du schon besitzt",
+					"Alles in einer PDF, innerhalb von 10 Werktagen",
+					"Ein 30-Minuten-Videocall zu einem beliebigen Zeitpunkt im Prozess",
+					"Eine Änderungsrunde per E-Mail / WhatsApp innerhalb von 14 Tagen nach Lieferung",
+				],
+				notIncluded:
+					"Zusätzliche Videocalls, ein Besuch bei dir zu Hause, fotorealistische 3D-Renderings, Bestellung und Lieferung, zusätzliche Räume oder weitere Änderungsrunden. Extras sind für 95 € pro Stunde möglich.",
+				howItWorks: {
+					ordered: true,
+					items: [
+						"Sicher per Stripe bezahlen.",
+						"Fragebogen ausfüllen und Fotos sowie Maße schicken.",
+						"Dein Room Recipe als PDF innerhalb von 10 Werktagen erhalten.",
+						"Mir sagen, was du geändert haben möchtest. Du hast eine Änderungsrunde.",
+					],
+				},
+				goodToKnow: [
+					"Wenn sich dein Raum nicht für ein Room Recipe eignet, sage ich dir das innerhalb von 2 Werktagen und erstatte dir den vollen Betrag.",
+					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen ein Room Recipe, wird die Gebühr vollständig angerechnet.",
+					"Einige Links in deiner Einkaufsliste können Affiliate-Links sein. Dafür erhalte ich unter Umständen eine kleine Provision. Sie entscheidet nie darüber, was ich empfehle.",
+				],
+				price: {
+					headline: "549 €",
+					lines: [
+						"Inkl. 19 % MwSt. · Einführungspreis bis 28. Februar 2027",
+						"Ein Raum bis 30 m². Zusätzliche Räume, weitere Änderungsrunden und 3D-Ansichten auf Anfrage.",
+					],
+				},
+				cta: { label: "Room Recipe jetzt buchen" },
+			},
 		},
 	},
 	{
@@ -202,6 +267,49 @@ const RAW_SERVICES: RawService[] = [
 				cta: {
 					label: "Coming soon",
 					note: "Still in the making, so not bookable just yet.",
+				},
+			},
+			de: {
+				title: "Full Design Service",
+				tagline: "Das ganze Paket, von Anfang bis Ende.",
+				teaser: "ab 1.290 €",
+				intro: [
+					"Für den Raum, den du seit drei Jahren in Ordnung bringen willst. Wir starten bei dir vor Ort mit Zollstock und einem ehrlichen Gespräch und enden mit einem Plan, den du tatsächlich sehen kannst. Immer mieterfreundlich. Deine Kaution bleibt, wo sie hingehört.",
+				],
+				included: [
+					"Fragebogen und ein Kickoff bei dir zu Hause (bis zu 90 Minuten, inkl. Aufmaß)",
+					"2 Moodboard-Optionen inkl. Farbpalette und Stoffvorschlägen",
+					"2D-Grundriss mit Möblierung und Lichtkonzept",
+					"3D-Renderings des finalen Designs (zwei Ansichten)",
+					"Einkaufsliste mit bis zu 15 Produkten, passend zu deinem Budget",
+					"Ein 60-minütiger Präsentationscall",
+					"Zwei Änderungsrunden per E-Mail oder WhatsApp während des Prozesses",
+					"Zeitrahmen: etwa 4 bis 6 Wochen",
+				],
+				notIncluded:
+					"Die Möbel und Produkte selbst, die Arbeit von Handwerkern (du bezahlst sie direkt), technische Planung wie Genehmigungen, Elektrik oder Sanitär sowie zusätzliche Videocalls.",
+				howItWorks: {
+					ordered: false,
+					items: [
+						"Sicher per Stripe bezahlen",
+						"20 % bei Annahme des Angebots, 50 % bei der Präsentation des Designkonzepts, 30 % bei Lieferung des finalen Designs.",
+					],
+				},
+				goodToKnow: [
+					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen den Full Design Service, wird die Gebühr vollständig angerechnet.",
+					"Einige Links in deiner Einkaufsliste können Affiliate-Links sein. Dafür erhalte ich unter Umständen eine kleine Provision. Sie entscheidet nie darüber, was ich empfehle.",
+					"Du möchtest, dass ich dabei bleibe, bis das letzte Bild hängt? Für 95 € pro Stunde koordiniere ich Bestellungen und Lieferungen, steuere das Projekt und stimme mich mit deinen Handwerkern ab.",
+				],
+				price: {
+					headline: "Ab 1.290 €",
+					lines: [
+						"für den ersten Raum, 990 € für jeden weiteren Raum",
+						"Räume bis 30 m²; größere Räume, Küchen und Bäder auf Anfrage. Alle Preise inkl. 19 % MwSt.",
+					],
+				},
+				cta: {
+					label: "Demnächst",
+					note: "Noch in Arbeit, daher noch nicht buchbar.",
 				},
 			},
 		},

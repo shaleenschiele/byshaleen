@@ -1,11 +1,18 @@
 import { createFileRoute, notFound, Outlet } from "@tanstack/react-router";
+import { LanguageSwitcher } from "#/components/LanguageSwitcher";
 import { LocaleProvider } from "#/i18n/context";
-import { toLocale } from "#/i18n/locale";
+import { ENABLED_LOCALES, type Locale, toLocale } from "#/i18n/locale";
 
-/** Only English is live ("/"). Any language prefix is a 404 until more languages are enabled. */
+/** English lives at "/", German at "/de". Anything else, or a disabled language, is a 404. */
 export const Route = createFileRoute("/{-$locale}")({
 	beforeLoad: ({ params }) => {
-		if (params.locale !== undefined) throw notFound();
+		if (params.locale === undefined) return;
+		if (
+			params.locale !== "de" ||
+			!ENABLED_LOCALES.includes(params.locale as Locale)
+		) {
+			throw notFound();
+		}
 	},
 	component: LocaleLayout,
 });
@@ -15,6 +22,7 @@ function LocaleLayout() {
 
 	return (
 		<LocaleProvider locale={toLocale(locale)}>
+			<LanguageSwitcher />
 			<Outlet />
 		</LocaleProvider>
 	);

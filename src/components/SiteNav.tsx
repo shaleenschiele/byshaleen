@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { FreeCallLink } from "#/components/FreeCall";
 import { useLocale, useUi } from "#/i18n/context";
-import { localeParam } from "#/i18n/locale";
+import { localeParam, MULTILINGUAL } from "#/i18n/locale";
 
 export const NAV_IDS = [
 	"about",
@@ -21,7 +21,14 @@ export function TopLinks() {
 	const ui = useUi();
 
 	return (
-		<nav aria-label={ui.nav.sections} className="hidden px-28 pt-9 sm:block">
+		<nav
+			aria-label={ui.nav.sections}
+			className={
+				MULTILINGUAL
+					? "px-6 pt-24 sm:pt-9 sm:pr-28 sm:pl-40"
+					: "pt-7 pr-20 pl-6 sm:px-28 sm:pt-9"
+			}
+		>
 			<ul className="flex flex-wrap justify-center gap-x-5 gap-y-1 font-body text-[11px] tracking-[0.18em] text-ecru uppercase sm:gap-x-8 sm:text-xs">
 				{NAV_IDS.map((id) => (
 					<li key={id}>

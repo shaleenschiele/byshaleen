@@ -9,7 +9,7 @@ import {
 	type Section,
 } from "#/data/projects";
 import { useLocale, useUi } from "#/i18n/context";
-import { localeParam, toLocale } from "#/i18n/locale";
+import { localeParam, MULTILINGUAL, toLocale } from "#/i18n/locale";
 import { UI } from "#/i18n/ui";
 
 export const Route = createFileRoute("/{-$locale}/projects/$slug")({
@@ -65,7 +65,11 @@ function ProjectHero({ project }: { project: Project }) {
 			<div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent via-45% to-transparent" />
 			<div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/25 to-transparent" />
 
-			<div className="absolute inset-x-0 top-0 z-10 px-20 pt-8 text-center sm:pt-10">
+			<div
+				className={`absolute inset-x-0 top-0 z-10 text-center ${
+					MULTILINGUAL ? "px-6 pt-24 sm:pt-10" : "px-20 pt-8 sm:pt-10"
+				}`}
+			>
 				<Link
 					to="/{-$locale}"
 					params={{ locale: localeParam(locale) }}

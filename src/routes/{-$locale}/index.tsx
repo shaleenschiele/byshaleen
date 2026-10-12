@@ -113,8 +113,8 @@ function About() {
 	);
 }
 
-/** Opening quotation mark per language (English “…”). */
-const OPENING_QUOTE: Record<Locale, string> = { en: "“" };
+/** Opening quotation mark per language (English “…”, German „…“). */
+const OPENING_QUOTE: Record<Locale, string> = { en: "“", de: "„" };
 
 function Testimonials() {
 	const ui = useUi();
