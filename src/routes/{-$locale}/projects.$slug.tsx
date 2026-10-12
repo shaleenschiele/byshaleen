@@ -108,9 +108,7 @@ function Overview({ project }: { project: Project }) {
 							<dt className="font-display text-2xl text-wine italic sm:text-3xl">
 								{fact.label}
 							</dt>
-							<dd className="mt-1 font-body text-sm leading-relaxed font-light">
-								{fact.value}
-							</dd>
+							<dd className="body-copy mt-1">{fact.value}</dd>
 						</div>
 					))}
 				</dl>
@@ -161,7 +159,7 @@ function ProjectSection({ section }: { section: Section }) {
 					)}
 
 					{hasText && (
-						<div className="space-y-6 font-body text-sm leading-relaxed sm:text-base md:col-span-8">
+						<div className="body-copy space-y-6 md:col-span-8">
 							{section.body?.map((paragraph) => (
 								<p key={paragraph}>{paragraph}</p>
 							))}

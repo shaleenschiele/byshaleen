@@ -17,6 +17,14 @@
   --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Body text used in every prose block: About, services, project pages. */
+@utility body-copy {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
 html {
   scroll-behavior: smooth;
 }

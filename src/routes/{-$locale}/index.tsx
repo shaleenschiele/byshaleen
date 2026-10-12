@@ -106,7 +106,7 @@ function About() {
 						{ui.about.heading}
 					</h2>
 
-					<div className="mt-8 space-y-6 text-justify font-body text-base leading-relaxed font-light hyphens-auto sm:text-lg">
+					<div className="body-copy mt-8 space-y-6">
 						{ui.about.paragraphs.map((paragraph) => (
 							<p key={paragraph}>{paragraph}</p>
 						))}
