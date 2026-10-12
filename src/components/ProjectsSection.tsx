@@ -24,7 +24,10 @@ export function ProjectsSection() {
 
 				<ul className="mt-14 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
 					{projects.map((project) => (
-						<li key={project.slug}>
+						<li
+							key={project.slug}
+							className="max-sm:[&:not(:first-child)]:border-t max-sm:[&:not(:first-child)]:border-wine/30 max-sm:[&:not(:first-child)]:pt-14"
+						>
 							<ProjectCard project={project} />
 						</li>
 					))}

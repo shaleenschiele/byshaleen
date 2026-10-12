@@ -7,6 +7,7 @@ const en = {
 			"Renter-friendly interior design in Berlin. Flat Therapy, Room Recipe, Full Design Service and furniture sourcing with by.shaleen.",
 	},
 	nav: {
+		home: "Home",
 		about: "About",
 		services: "Services",
 		projects: "Projects",
@@ -60,8 +61,7 @@ const en = {
 		status: "Status",
 	},
 	references: {
-		heading: "What former clients say",
-		eyebrow: "Client references",
+		heading: "Client references",
 	},
 	contact: {
 		heading: "Any other questions?",
