@@ -22,7 +22,6 @@ const en = {
 		lines: ["Make your home"],
 		accent: "feel personal",
 		kicker: "Renter-friendly design",
-		blurb: "No drilling. No landlord drama. No deposit at risk.",
 		masthead: { center: "Berlin · Interior Design", right: "On-site & remote" },
 		alt: "A cosy sofa with two throw pillows, one cream and one rust-coloured, bathed in warm sunlight.",
 	},
@@ -32,7 +31,7 @@ const en = {
 		paragraphs: [
 			"Eight years in corporate taught me structure and strategy. My eye for design did the rest.",
 			"My style is best described as ‘moody modern’: rich colours, a mix of materials, organic shapes, and old furniture happily coexisting with new.",
-			"Located in Berlin, Germany, I offer on-site as well as remote support and specialise in renter-friendly (Altbau) design: turning the flat you’re renting (no drilling, no landlord drama, no deposit at risk) into somewhere that actually feels like yours. Usually it’s small, deliberate decisions, not a full-on renovation, doing the heavy lifting.",
+			"Located in Berlin, Germany, I offer on-site as well as remote support and specialise in renter-friendly (Altbau) design: turning the flat you’re renting (no structural changes, no landlord drama, no deposit at risk) into somewhere that actually feels like yours. Usually it’s small, deliberate decisions, not a full-on renovation, doing the heavy lifting.",
 			"Work with me and expect a clear process, a bit of gentle pushback on your own ideas, clever workarounds and solutions for the things you can’t change structurally, and, despite the seriousness with which I take cushion placement, quite a lot of fun along the way.",
 		],
 	},

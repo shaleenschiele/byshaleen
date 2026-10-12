@@ -59,33 +59,26 @@ function Hero() {
 				</div>
 			</header>
 
-			<div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6">
-				<p className="mb-5 font-display text-sm tracking-[0.16em] text-warm/90 sm:hidden">
-					{ui.hero.kicker}
-				</p>
-				<h1 className="text-center font-display text-[length:var(--hero-fs)] leading-[0.86]">
-					{ui.hero.lines.map((line) => (
-						<span
-							key={line}
-							className="block font-light tracking-[-0.01em] uppercase sm:whitespace-nowrap"
-						>
-							{line}
+			<div className="absolute inset-0 z-10 flex items-center justify-center px-6">
+				<div className="relative">
+					<p className="absolute right-0 bottom-full left-0 mb-5 text-center font-display text-sm tracking-[0.16em] text-warm/90 sm:mb-6 sm:text-base">
+						{ui.hero.kicker}
+					</p>
+					<h1 className="text-center font-display text-[length:var(--hero-fs)] leading-[0.86]">
+						{ui.hero.lines.map((line) => (
+							<span
+								key={line}
+								className="block font-light tracking-[-0.01em] uppercase sm:whitespace-nowrap"
+							>
+								{line}
+							</span>
+						))}
+						<span className="mt-[0.02em] -translate-y-[0.05em] block text-[0.85em] font-normal leading-none text-cream italic">
+							{ui.hero.accent}
 						</span>
-					))}
-					<span className="mt-[0.02em] -translate-y-[0.05em] block text-[0.85em] font-normal leading-none text-cream italic">
-						{ui.hero.accent}
-					</span>
-				</h1>
+					</h1>
+				</div>
 			</div>
-
-			<aside className="absolute right-6 bottom-10 z-10 hidden max-w-[15rem] sm:block border border-warm/12 bg-warm/10 px-4 py-3 text-warm/80 backdrop-blur-sm sm:right-10 sm:bottom-14 lg:right-16">
-				<p className="font-body text-[9px] font-medium tracking-[0.22em] uppercase opacity-80">
-					{ui.hero.kicker}
-				</p>
-				<p className="mt-1.5 font-display text-base leading-snug italic">
-					{ui.hero.blurb}
-				</p>
-			</aside>
 		</section>
 	);
 }
@@ -261,19 +254,18 @@ function ContactFooter() {
 			</div>
 
 			<div className="relative z-10 flex flex-col gap-6 text-ecru sm:flex-row sm:items-center sm:justify-between">
-				<div className="flex items-center gap-3">
-					<a
-						href="https://www.instagram.com/by.shaleen?igsh=MWdrb2c3eXFkcng5Nw=="
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label={ui.contact.instagram}
-					>
-						<InstagramIcon className="h-6 w-6" />
-					</a>
+				<a
+					href="https://www.instagram.com/by.shaleen?igsh=MWdrb2c3eXFkcng5Nw=="
+					target="_blank"
+					rel="noopener noreferrer"
+					title={ui.contact.instagram}
+					className="flex w-fit items-center gap-3 underline-offset-4 hover:underline"
+				>
+					<InstagramIcon className="h-6 w-6" />
 					<span className="font-display text-lg font-bold tracking-wide uppercase">
 						by.shaleen
 					</span>
-				</div>
+				</a>
 
 				<p className="font-display text-xs tracking-wide uppercase">
 					{ui.contact.rights}

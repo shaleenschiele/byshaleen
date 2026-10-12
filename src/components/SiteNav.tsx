@@ -20,10 +20,7 @@ export function TopLinks() {
 	const ui = useUi();
 
 	return (
-		<nav
-			aria-label={ui.nav.sections}
-			className="pt-7 pr-20 pl-6 sm:px-28 sm:pt-9"
-		>
+		<nav aria-label={ui.nav.sections} className="hidden px-28 pt-9 sm:block">
 			<ul className="flex flex-wrap justify-center gap-x-5 gap-y-1 font-body text-[11px] tracking-[0.18em] text-ecru uppercase sm:gap-x-8 sm:text-xs">
 				{NAV_IDS.map((id) => (
 					<li key={id}>
