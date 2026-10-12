@@ -11,6 +11,9 @@ export const NAV_IDS = [
 	"contact",
 ] as const;
 
+/** The hamburger menu also leads back to the cover page ("top" is the hero's id). */
+const MENU_IDS = ["top", ...NAV_IDS] as const;
+
 /** Text links at the very top of the page (scrolls away with the hero). */
 export function TopLinks() {
 	const locale = useLocale();
@@ -102,7 +105,7 @@ export function MenuButton() {
 				}`}
 			>
 				<ul className="space-y-6">
-					{NAV_IDS.map((id) => (
+					{MENU_IDS.map((id) => (
 						<li key={id}>
 							<Link
 								to="/{-$locale}"
@@ -111,7 +114,7 @@ export function MenuButton() {
 								onClick={() => setOpen(false)}
 								className="font-display text-4xl uppercase tracking-wide underline-offset-8 hover:underline focus-visible:underline sm:text-5xl"
 							>
-								{ui.nav[id]}
+								{id === "top" ? ui.nav.home : ui.nav[id]}
 							</Link>
 						</li>
 					))}

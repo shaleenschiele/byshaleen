@@ -39,7 +39,10 @@ function Hero() {
 	const ui = useUi();
 
 	return (
-		<section className="group relative min-h-[max(100svh,36rem)] overflow-hidden bg-ink text-warm [--hero-fs:clamp(2rem,8.4vw,8.5rem)]">
+		<section
+			id="top"
+			className="group relative min-h-[max(100svh,36rem)] overflow-hidden bg-ink text-warm [--hero-fs:clamp(3rem,15vw,4.5rem)] sm:[--hero-fs:clamp(2rem,8.4vw,8.5rem)]"
+		>
 			<img
 				src="/images/hero-sofa.webp"
 				alt={ui.hero.alt}
@@ -49,19 +52,22 @@ function Hero() {
 
 			<header className="absolute inset-x-0 top-0 z-20">
 				<TopLinks />
-				<div className="mx-6 mt-8 flex items-center justify-between gap-4 border-y border-warm/40 py-2 font-body text-[10px] tracking-[0.25em] uppercase sm:mx-10 lg:mx-16">
+				<div className="mx-6 mt-8 hidden items-center justify-between gap-4 border-y border-warm/40 py-2 font-body text-[10px] tracking-[0.25em] uppercase sm:mx-10 sm:flex lg:mx-16">
 					<span className="font-semibold">by.shaleen</span>
 					<span className="hidden sm:inline">{ui.hero.masthead.center}</span>
 					<span>{ui.hero.masthead.right}</span>
 				</div>
 			</header>
 
-			<div className="absolute inset-0 z-10 flex items-center justify-center px-6">
+			<div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6">
+				<p className="mb-5 font-display text-sm tracking-[0.16em] text-warm/90 sm:hidden">
+					{ui.hero.kicker}
+				</p>
 				<h1 className="text-center font-display text-[length:var(--hero-fs)] leading-[0.86]">
 					{ui.hero.lines.map((line) => (
 						<span
 							key={line}
-							className="block font-light tracking-[-0.01em] whitespace-nowrap uppercase"
+							className="block font-light tracking-[-0.01em] uppercase sm:whitespace-nowrap"
 						>
 							{line}
 						</span>
@@ -72,7 +78,7 @@ function Hero() {
 				</h1>
 			</div>
 
-			<aside className="absolute right-6 bottom-10 z-10 max-w-[15rem] border border-warm/12 bg-warm/10 px-4 py-3 text-warm/80 backdrop-blur-sm sm:right-10 sm:bottom-14 lg:right-16">
+			<aside className="absolute right-6 bottom-10 z-10 hidden max-w-[15rem] sm:block border border-warm/12 bg-warm/10 px-4 py-3 text-warm/80 backdrop-blur-sm sm:right-10 sm:bottom-14 lg:right-16">
 				<p className="font-body text-[9px] font-medium tracking-[0.22em] uppercase opacity-80">
 					{ui.hero.kicker}
 				</p>
@@ -131,22 +137,15 @@ function Testimonials() {
 			className="bg-warm px-6 py-24 text-wine sm:px-10 md:py-32 lg:px-16"
 		>
 			<div className="mx-auto max-w-6xl">
-				<div className="grid gap-6 md:grid-cols-12 md:gap-16">
-					<p className="font-body text-xs font-semibold tracking-[0.2em] uppercase md:col-span-3 md:pt-4">
-						{ui.references.eyebrow}
-					</p>
-					<div className="@container md:col-span-9">
-						<h2 className="font-display text-[min(5.8cqw,4.5rem)] leading-[1.02] tracking-wide whitespace-nowrap uppercase">
-							{ui.references.heading}
-						</h2>
-					</div>
-				</div>
+				<h2 className="font-display text-5xl tracking-wide uppercase sm:text-6xl">
+					{ui.references.heading}
+				</h2>
 
-				<div className="mt-16 border-t border-wine/30 pt-12 md:mt-20 md:pt-16">
+				<div className="mt-14 border-t border-wine/30 pt-12 md:pt-16">
 					{featured && <FeaturedQuote testimonial={featured} />}
 				</div>
 
-				<div className="mt-16 grid gap-12 border-t border-wine/30 pt-12 md:grid-cols-2 md:gap-16 md:pt-16">
+				<div className="mt-12 grid gap-12 border-t border-wine/30 pt-12 max-md:[&>figure:not(:first-child)]:border-t max-md:[&>figure:not(:first-child)]:border-wine/30 max-md:[&>figure:not(:first-child)]:pt-12 md:mt-16 md:grid-cols-2 md:gap-16 md:pt-16">
 					{rest.map((testimonial, i) => (
 						<PlainQuote
 							key={testimonial.names}
@@ -189,17 +188,17 @@ function FeaturedQuote({ testimonial }: { testimonial: Testimonial }) {
 
 	return (
 		<figure className="grid gap-8 md:grid-cols-12 md:gap-16">
-			<div className="md:col-span-3">
+			<div className="order-2 md:order-1 md:col-span-3">
 				<Attribution testimonial={testimonial} index={1} />
 			</div>
-			<blockquote className="md:col-span-9">
+			<blockquote className="order-1 md:order-2 md:col-span-9">
 				<span
 					aria-hidden="true"
-					className="block font-display text-7xl leading-none opacity-30 md:text-8xl"
+					className="block font-display text-6xl leading-none opacity-30 sm:text-7xl md:text-8xl"
 				>
 					{OPENING_QUOTE[locale]}
 				</span>
-				<p className="-mt-6 font-display text-2xl italic leading-[1.25] sm:text-3xl md:-mt-8 md:text-4xl">
+				<p className="-mt-3 font-display text-xl italic leading-snug sm:-mt-6 sm:text-3xl sm:leading-[1.25] md:-mt-8 md:text-4xl">
 					{testimonial.quote[locale]}
 				</p>
 			</blockquote>

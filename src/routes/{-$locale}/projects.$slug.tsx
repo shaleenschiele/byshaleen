@@ -146,7 +146,7 @@ function ProjectSection({ section }: { section: Section }) {
 
 	return (
 		<section className="px-6 sm:px-10 lg:px-16">
-			<div className="mx-auto max-w-6xl border-t border-wine/25 py-12 md:py-16">
+			<div className="mx-auto max-w-6xl border-t border-wine/30 py-12 md:py-16">
 				<div className="grid gap-8 md:grid-cols-12 md:gap-16">
 					<h2 className="font-display text-3xl leading-none uppercase tracking-wide sm:text-4xl md:col-span-4">
 						{section.heading}
