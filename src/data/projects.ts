@@ -184,7 +184,7 @@ const RAW_PROJECTS: RawProject[] = [
 					{
 						file: "p-berg-bedroom/final.jpg",
 						alt: l(
-							"The finished bedroom: limewash walls, stone nightstand lamp, plant and terracotta bedding.",
+							"The finished bedroom: limewash walls, stone bedside lamp, plant and terracotta bedding.",
 						),
 						tone: "blush",
 						orientation: "portrait",
@@ -207,7 +207,7 @@ const RAW_PROJECTS: RawProject[] = [
 					},
 					{
 						file: "p-berg-bedroom/light-2.jpg",
-						alt: l("Two stone nightstand lamps flanking the bed."),
+						alt: l("Two stone bedside lamps flanking the bed."),
 						tone: "blush",
 						orientation: "portrait",
 					},
@@ -254,9 +254,9 @@ const RAW_PROJECTS: RawProject[] = [
 				title: "Wedding Guest Room",
 				shortTitle: "Guest Room",
 				location: "Wedding, Berlin",
-				type: "Guest room / Office · Altbau",
+				type: "Guest room / office · Altbau",
 				scope:
-					"Color concept, layout, storage options, combining guest and office space",
+					"Colour concept, layout, storage options, combining guest and office space",
 				statusLabel: "Coming soon",
 				tagline:
 					"A guest room that doubles as an office, without the office vibe.",
@@ -272,7 +272,7 @@ const RAW_PROJECTS: RawProject[] = [
 		cover: {
 			file: "my-own-home/cover.jpg",
 			alt: l(
-				"An empty, sunlit room in Shaleen's own Altbau flat with oak parquet and a tall window.",
+				"An empty, sunlit room in Shaleen’s own Altbau flat with oak parquet and a tall window.",
 			),
 			tone: "wine",
 		},

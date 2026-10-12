@@ -124,9 +124,9 @@ function ServiceDetails({ service }: { service: Service }) {
 	const Steps = howItWorks?.ordered ? "ol" : "ul";
 
 	return (
-		<div className="grid gap-10 pb-12 font-light md:grid-cols-2 md:gap-16">
+		<div className="grid gap-10 pb-12 md:grid-cols-2 md:gap-16">
 			<div className="space-y-8">
-				<div className="space-y-4 font-body text-sm leading-relaxed sm:text-base">
+				<div className="body-copy space-y-4">
 					{service.intro.map((paragraph) => (
 						<p key={paragraph}>{paragraph}</p>
 					))}
@@ -153,10 +153,16 @@ function ServiceDetails({ service }: { service: Service }) {
 						</Steps>
 					</DetailBlock>
 				)}
+
+				{notIncluded && service.notIncludedLeft && (
+					<DetailBlock label={ui.services.notIncluded}>
+						<p>{notIncluded}</p>
+					</DetailBlock>
+				)}
 			</div>
 
 			<div className="space-y-8">
-				{notIncluded && (
+				{notIncluded && !service.notIncludedLeft && (
 					<DetailBlock label={ui.services.notIncluded}>
 						<p>{notIncluded}</p>
 					</DetailBlock>
@@ -172,7 +178,7 @@ function ServiceDetails({ service }: { service: Service }) {
 
 				<div className="rounded-3xl bg-wine px-8 py-8 text-cream">
 					<p className="font-display text-4xl">{service.price.headline}</p>
-					<div className="mt-3 space-y-1 font-body text-sm leading-relaxed opacity-90">
+					<div className="mt-3 space-y-1 font-body text-sm leading-relaxed font-light opacity-90">
 						{service.price.lines.map((line) => (
 							<p key={line}>{line}</p>
 						))}
@@ -196,9 +202,7 @@ function DetailBlock({
 			<h4 className="font-display text-2xl text-wine italic sm:text-3xl">
 				{label}
 			</h4>
-			<div className="mt-3 font-body text-sm leading-relaxed sm:text-base">
-				{children}
-			</div>
+			<div className="body-copy mt-3">{children}</div>
 		</div>
 	);
 }
