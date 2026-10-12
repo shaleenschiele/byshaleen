@@ -1,6 +1,12 @@
 import { TanStackDevtools } from "@tanstack/react-devtools";
-import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import {
+	createRootRoute,
+	HeadContent,
+	Scripts,
+	useParams,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import { toLocale } from "#/i18n/locale";
 
 import appCss from "../styles.css?url";
 
@@ -52,8 +58,13 @@ export const Route = createRootRoute({
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
+	const locale = useParams({
+		strict: false,
+		select: (params) => toLocale(params.locale),
+	});
+
 	return (
-		<html lang="en">
+		<html lang={locale}>
 			<head>
 				<HeadContent />
 			</head>
