@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FreeCallBlock } from "#/components/FreeCall";
 import { getServices, type Service } from "#/data/services";
 import { useLocale, useUi } from "#/i18n/context";
 
@@ -38,6 +39,8 @@ export function Services() {
 						/>
 					))}
 				</ul>
+
+				<FreeCallBlock />
 			</div>
 		</section>
 	);

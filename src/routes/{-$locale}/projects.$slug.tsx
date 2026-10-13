@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { FreeCallLink } from "#/components/FreeCall";
 import { ProjectImage } from "#/components/ProjectImage";
 import { MenuButton } from "#/components/SiteNav";
 import {
@@ -280,6 +281,9 @@ function NextProject({ current, next }: { current: Project; next: Project }) {
 							{ui.projects.allProjects}
 						</Link>
 					</div>
+					<p className="mt-6 font-body text-sm text-cream/80">
+						<FreeCallLink />
+					</p>
 				</div>
 			</div>
 		</section>
