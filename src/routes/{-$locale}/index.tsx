@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { SVGProps } from "react";
+import { FreeCallLink } from "#/components/FreeCall";
 import { ProjectsSection } from "#/components/ProjectsSection";
 import { Services } from "#/components/Services";
 import { MenuButton, TopLinks } from "#/components/SiteNav";
+import { CONTACT_EMAIL } from "#/data/links";
 import { TESTIMONIALS, type Testimonial } from "#/data/testimonials";
 import { useLocale, useUi } from "#/i18n/context";
 import { type Locale, toLocale } from "#/i18n/locale";
@@ -52,11 +54,6 @@ function Hero() {
 
 			<header className="absolute inset-x-0 top-0 z-20">
 				<TopLinks />
-				<div className="mx-6 mt-8 hidden items-center justify-between gap-4 border-y border-warm/40 py-2 font-body text-[10px] tracking-[0.25em] uppercase sm:mx-10 sm:flex lg:mx-16">
-					<span className="font-semibold">by.shaleen</span>
-					<span className="hidden sm:inline">{ui.hero.masthead.center}</span>
-					<span>{ui.hero.masthead.right}</span>
-				</div>
 			</header>
 
 			<div className="absolute inset-0 z-10 flex items-center justify-center px-6">
@@ -246,11 +243,16 @@ function ContactFooter() {
 					{ui.contact.heading}
 				</h2>
 				<a
-					href="mailto:shaleen.schiele@gmail.com"
-					className="rounded-full border border-ecru px-10 py-4 font-body text-base font-semibold underline underline-offset-4"
+					href={`mailto:${CONTACT_EMAIL}`}
+					className="rounded-full bg-warm px-8 py-4 font-body text-base font-semibold text-wine shadow-lg transition-colors hover:bg-cream sm:px-10"
 				>
-					{ui.contact.cta}
+					{CONTACT_EMAIL}
 				</a>
+				<p className="-mt-2 max-w-sm font-body text-sm leading-relaxed font-light text-ecru/90">
+					{ui.call.footerLead}{" "}
+					<FreeCallLink label={ui.call.footerLink} className="font-normal" />{" "}
+					{ui.call.footerTail}
+				</p>
 			</div>
 
 			<div className="relative z-10 flex flex-col gap-6 text-ecru sm:flex-row sm:items-center sm:justify-between">

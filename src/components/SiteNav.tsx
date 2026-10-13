@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { FreeCallLink } from "#/components/FreeCall";
 import { useLocale, useUi } from "#/i18n/context";
 import { localeParam } from "#/i18n/locale";
 
@@ -116,6 +117,12 @@ export function MenuButton() {
 						</li>
 					))}
 				</ul>
+				<div className="mt-10 border-t border-cream/25 pt-6">
+					<FreeCallLink
+						label={ui.call.menu}
+						className="font-body text-xs tracking-[0.18em] text-cream/80 uppercase"
+					/>
+				</div>
 			</nav>
 		</>
 	);

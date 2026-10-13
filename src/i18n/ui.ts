@@ -22,7 +22,7 @@ const en = {
 		lines: ["Make your home"],
 		accent: "feel personal",
 		kicker: "Renter-friendly design",
-		masthead: { center: "Berlin · Interior Design", right: "On-site & remote" },
+		masthead: { right: "On-site & remote" },
 		alt: "A cosy sofa with two throw pillows, one cream and one rust-coloured, bathed in warm sunlight.",
 	},
 	about: {
@@ -59,12 +59,21 @@ const en = {
 		scope: "Scope",
 		status: "Status",
 	},
+	call: {
+		heading: "Not sure which product is right for you? Let’s chat!",
+		note: "A free, no-obligation 15-minute call.",
+		button: "Book a free call",
+		link: "Not sure yet? Book a free 15-minute call",
+		menu: "Free 15-min call",
+		footerLead: "Not sure which service is right for you?",
+		footerLink: "Book a free 15-minute call",
+		footerTail: "and we’ll figure it out together.",
+	},
 	references: {
 		heading: "Client references",
 	},
 	contact: {
 		heading: "Any other questions?",
-		cta: "Get in touch",
 		rights: "Shaleen Schiele | All rights reserved",
 		imprint: "Imprint",
 		dataProtection: "Data Protection",

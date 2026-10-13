@@ -75,7 +75,7 @@ function ProjectCard({ project }: { project: Project }) {
 			</div>
 
 			<div className="mt-5 text-wine">
-				<p className="font-body text-xs tracking-[0.15em] uppercase opacity-70">
+				<p className="font-body text-xs tracking-[0.15em] uppercase opacity-80">
 					{project.type}
 				</p>
 				<p className="mt-2 font-display text-xl italic leading-snug">
