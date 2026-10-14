@@ -96,8 +96,8 @@ const RAW_SERVICES: RawService[] = [
 					headline: "From €129",
 					lines: [
 						"New pieces: €129 for the first piece (style call included), €69 for each additional piece",
-						"Vintage hunt online: from €179 per piece",
-						"Vintage hunt in person (three shops or flea markets): from €299 per piece",
+						"Vintage hunt online: from €139 for the first piece, from €89 for each additional piece",
+						"Vintage hunt in person (three shops or flea markets): from €219 for the first piece, from €129 for each additional piece",
 					],
 				},
 				cta: {
