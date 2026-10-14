@@ -70,6 +70,7 @@ const RAW_SERVICES: RawService[] = [
 				teaser: "from €129",
 				intro: [
 					"Goodbye, 47 open tabs at midnight.",
+					"Looking for something new? You know you need a sofa. The internet has 3,000 of them, and somehow none look right. I do the scrolling and come back with a curated selection to fit your room, measurements and budget.",
 					"Want something with a past? I hunt through Berlin’s vintage shops and flea markets in person, or search auction houses online. Perfect if you’re new to the city and don’t know where the good stuff hides yet.",
 				],
 				included: [
@@ -77,7 +78,8 @@ const RAW_SERVICES: RawService[] = [
 					"15-minute kickoff call, so I understand your taste before I start hunting",
 					"Three curated options per piece, with dimensions, prices and links",
 				],
-				notIncluded: "The price for the furniture and delivery themselves.",
+				notIncluded:
+					"The price for the furniture itself, as well as shipping, delivery and transport.",
 				howItWorks: {
 					ordered: true,
 					items: [
@@ -90,7 +92,7 @@ const RAW_SERVICES: RawService[] = [
 				goodToKnow: [
 					"For vintage you get a fixed quote after our style call, because a sideboard is easier to find than a 1960s rattan lamp in exactly that green.",
 					"I have fixed “Hunt Days” (twice a month) that I use to go to flea markets and vintage dealers. Your request will fall into one of these days and delivery depends on the schedule.",
-					"You place the order and pay the shop directly. Shipping, delivery and transport are not included. Vintage moves fast, so I can’t promise a piece will still be there tomorrow.",
+					"Vintage moves fast, so I can’t promise a piece will still be there tomorrow.",
 				],
 				price: {
 					headline: "From €129",
