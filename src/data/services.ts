@@ -131,6 +131,49 @@ const RAW_SERVICES: RawService[] = [
 					note: "Still in the making, so not bookable just yet. I’ll share the links once they are ready!",
 				},
 			},
+			de: {
+				title: "Furniture Sourcing & Vintage Hunt",
+				tagline: "Du weißt, was du willst. Dir fehlen nur die Abende.",
+				teaser: "ab 129 €",
+				intro: [
+					"Tschüss, 47 offene Tabs um Mitternacht.",
+					"Du suchst etwas Neues? Du weißt, dass du ein Sofa brauchst. Das Internet hat 3.000 davon, und irgendwie sieht keins richtig aus. Ich übernehme das Scrollen und komme mit einer kuratierten Auswahl zurück, die zu deinem Raum, deinen Maßen und deinem Budget passt.",
+					"Lust auf etwas mit Vergangenheit? Ich durchstöbere Berlins Vintage-Läden und Flohmärkte persönlich oder suche online in Auktionshäusern. Perfekt, wenn du neu in der Stadt bist und noch nicht weißt, wo die guten Sachen stecken.",
+				],
+				included: [
+					"Online-Fragebogen, in dem du angibst, was du suchst (inkl. Maße und Budget)",
+					"15-Minuten-Kickoff-Call, damit ich deinen Geschmack verstehe, bevor ich losjage",
+					"Drei kuratierte Optionen pro Möbelstück, mit Maßen, Preisen und Links",
+				],
+				notIncluded:
+					"Der Preis für die Möbel selbst sowie Versand, Lieferung und Transport.",
+				howItWorks: {
+					ordered: true,
+					items: [
+						"Fragebogen ausfüllen.",
+						"Sicher per Stripe bezahlen.",
+						"Im 15-Minuten-Kickoff-Call mit mir sprechen.",
+						"Deine neuen Lieblingsstücke genießen.",
+					],
+				},
+				goodToKnow: [
+					"Für Vintage bekommst du nach unserem Style-Call ein Festangebot, denn ein Sideboard findet man leichter als eine Rattanlampe aus den 60ern in genau diesem Grün.",
+					"Ich habe feste „Hunt Days“ (zweimal im Monat), an denen ich Flohmärkte und Vintage-Händler abklappere. Deine Anfrage fällt auf einen dieser Tage, die Lieferung hängt vom Terminplan ab.",
+					"Vintage ist schnell weg, deshalb kann ich nicht versprechen, dass ein Stück morgen noch da ist.",
+				],
+				price: {
+					headline: "Ab 129 €",
+					lines: [
+						"Neuware: 129 € für das erste Stück (inkl. Style-Call), 69 € für jedes weitere Stück",
+						"Vintage-Suche online: ab 139 € für das erste Stück, ab 89 € für jedes weitere",
+						"Vintage-Suche vor Ort (drei Läden oder Flohmärkte): ab 219 € für das erste Stück, ab 129 € für jedes weitere",
+					],
+				},
+				cta: {
+					label: "Demnächst",
+					note: "Noch in Arbeit, daher noch nicht buchbar. Sobald die Links bereit sind, teile ich sie mit dir!",
+				},
+			},
 		},
 	},
 	{

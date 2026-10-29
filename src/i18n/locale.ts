@@ -1,11 +1,11 @@
-export const LOCALES = ["en", "de"] as const;
+export const LOCALES = ["de", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
 
-/**
- * Languages that are live on the site. German is fully translated but switched
- * off for now: add "de" here to bring back the /de pages and the EN | DE button.
- */
-export const ENABLED_LOCALES: readonly Locale[] = ["en"];
+/** German is the default and lives at "/"; English lives at "/en". */
+export const DEFAULT_LOCALE: Locale = "de";
+
+/** Languages that are live on the site, in the order the switcher shows them. */
+export const ENABLED_LOCALES: readonly Locale[] = ["de", "en"];
 
 /** True when visitors can choose between languages. */
 export const MULTILINGUAL = ENABLED_LOCALES.length > 1;
@@ -16,12 +16,13 @@ export type L<T> = Record<Locale, T>;
 /** Shorthand for writing translations side by side: l("Hello", "Hallo"). */
 export const l = <T>(en: T, de: T): L<T> => ({ en, de });
 
-/** English lives at "/", German at "/de". */
 export function toLocale(param: string | undefined): Locale {
-	return param === "de" && ENABLED_LOCALES.includes("de") ? "de" : "en";
+	return param === "en" && ENABLED_LOCALES.includes("en")
+		? "en"
+		: DEFAULT_LOCALE;
 }
 
 /** Value for the optional `{-$locale}` route param. */
 export function localeParam(locale: Locale) {
-	return locale === "en" ? undefined : locale;
+	return locale === DEFAULT_LOCALE ? undefined : locale;
 }

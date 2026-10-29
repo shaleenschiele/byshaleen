@@ -92,6 +92,7 @@ const de: UiStrings = {
 			"Mieterfreundliches Interior Design in Berlin. Flat Therapy, Room Recipe, Full Design Service und Möbel-Sourcing mit by.shaleen.",
 	},
 	nav: {
+		home: "Start",
 		about: "Über mich",
 		services: "Leistungen",
 		projects: "Projekte",
@@ -107,9 +108,7 @@ const de: UiStrings = {
 		lines: ["Mach dein Zuhause"],
 		accent: "persönlich",
 		kicker: "Mieterfreundliches Design",
-		blurb:
-			"Kein Bohren. Kein Ärger mit dem Vermieter. Kein Risiko für die Kaution.",
-		masthead: { center: "Berlin · Interior Design", right: "Vor Ort & remote" },
+		masthead: { right: "Vor Ort & remote" },
 		alt: "Ein gemütliches Sofa mit zwei Kissen, eines in Creme, eines in Rostrot, im warmen Sonnenlicht.",
 	},
 	about: {
@@ -118,7 +117,7 @@ const de: UiStrings = {
 		paragraphs: [
 			"Acht Jahre Konzern haben mir Struktur und Strategie beigebracht. Mein Auge für Design hat den Rest erledigt.",
 			"Mein Stil lässt sich am besten als „Moody Modern“ beschreiben: satte Farben, Materialmix, organische Formen und alte Möbel, die friedlich neben neuen stehen.",
-			"Ich arbeite von Berlin aus, vor Ort wie auch remote, und habe mich auf mieterfreundliches Design (vor allem im Altbau) spezialisiert: Aus der Wohnung, die du mietest (ohne Bohren, ohne Ärger mit dem Vermieter, ohne Risiko für die Kaution), wird ein Ort, der sich wirklich nach dir anfühlt. Meist sind es kleine, gezielte Entscheidungen, die die schwere Arbeit erledigen, kein kompletter Umbau.",
+			"Ich arbeite von Berlin aus, vor Ort wie auch remote, und habe mich auf mieterfreundliches Design (vor allem im Altbau) spezialisiert: Aus der Wohnung, die du mietest (ohne bauliche Veränderungen, ohne Ärger mit dem Vermieter, ohne Risiko für die Kaution), wird ein Ort, der sich wirklich nach dir anfühlt. Meist sind es kleine, gezielte Entscheidungen, die die schwere Arbeit erledigen, kein kompletter Umbau.",
 			"Wenn wir zusammenarbeiten, erwartet dich ein klarer Prozess, ein bisschen sanfter Widerspruch zu deinen eigenen Ideen, clevere Workarounds für alles, was sich baulich nicht ändern lässt, und, trotz des Ernstes, mit dem ich Kissenplatzierung nehme, ziemlich viel Spaß dabei.",
 		],
 	},
@@ -147,13 +146,21 @@ const de: UiStrings = {
 		scope: "Umfang",
 		status: "Status",
 	},
+	call: {
+		heading: "Du weißt nicht, welches Angebot zu dir passt? Lass uns sprechen!",
+		note: "Ein kostenloses, unverbindliches 15-Minuten-Gespräch.",
+		button: "Kostenloses Gespräch buchen",
+		link: "Noch unsicher? Buche ein kostenloses 15-Minuten-Gespräch",
+		menu: "Gratis-Call (15 Min.)",
+		footerLead: "Du weißt nicht, welche Leistung zu dir passt?",
+		footerLink: "Buche ein kostenloses 15-Minuten-Gespräch",
+		footerTail: "und wir finden es gemeinsam heraus.",
+	},
 	references: {
-		heading: "Was frühere Kund:innen sagen",
-		eyebrow: "Kundenstimmen",
+		heading: "Kundenstimmen",
 	},
 	contact: {
 		heading: "Noch Fragen?",
-		cta: "Kontakt aufnehmen",
 		rights: "Shaleen Schiele | Alle Rechte vorbehalten",
 		imprint: "Impressum",
 		dataProtection: "Datenschutz",

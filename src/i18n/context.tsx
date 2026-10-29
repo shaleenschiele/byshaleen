@@ -1,8 +1,8 @@
 import { createContext, type ReactNode, useContext } from "react";
-import type { Locale } from "./locale";
+import { DEFAULT_LOCALE, type Locale } from "./locale";
 import { UI } from "./ui";
 
-const LocaleContext = createContext<Locale>("en");
+const LocaleContext = createContext<Locale>(DEFAULT_LOCALE);
 
 export function LocaleProvider({
 	locale,
