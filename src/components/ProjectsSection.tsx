@@ -45,6 +45,7 @@ function ProjectCard({ project }: { project: Project }) {
 		"in-progress": ui.projects.inProgress,
 		"coming-soon": ui.projects.comingSoon,
 	}[project.status];
+	const card = project.card ?? project.cover;
 
 	return (
 		<Link
@@ -54,7 +55,10 @@ function ProjectCard({ project }: { project: Project }) {
 		>
 			<div className="@container relative aspect-[3/4] overflow-hidden bg-wine/10">
 				<div className="h-full w-full">
-					<ProjectImage {...project.cover} />
+					<ProjectImage
+						{...card}
+						className={card.cardFocus === "right" ? "object-right" : ""}
+					/>
 				</div>
 				<div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-black/30" />
 

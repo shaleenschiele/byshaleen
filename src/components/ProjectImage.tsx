@@ -35,12 +35,14 @@ export function ProjectImage({
 	alt,
 	tone = "ecru",
 	eager = false,
+	position,
 	className = "",
 }: {
 	file: string;
 	alt: string;
 	tone?: Tone;
 	eager?: boolean;
+	position?: string;
 	className?: string;
 }) {
 	const src = URL_BY_NAME.get(withoutExtension(`/src/assets/projects/${file}`));
@@ -52,6 +54,7 @@ export function ProjectImage({
 				alt={alt}
 				loading={eager ? "eager" : "lazy"}
 				decoding="async"
+				style={position ? { objectPosition: position } : undefined}
 				className={`h-full w-full object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-105 ${className}`}
 			/>
 		);

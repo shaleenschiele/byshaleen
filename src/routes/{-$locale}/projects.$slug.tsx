@@ -62,7 +62,8 @@ function ProjectHero({ project }: { project: Project }) {
 			<div className="absolute inset-0">
 				<ProjectImage {...project.cover} eager />
 			</div>
-			<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/40" />
+			<div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent via-45% to-transparent" />
+			<div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/25 to-transparent" />
 
 			<div className="absolute inset-x-0 top-0 z-10 px-20 pt-8 text-center sm:pt-10">
 				<Link
@@ -220,6 +221,9 @@ function Gallery({ images }: { images: NonNullable<Section["images"]> }) {
 	}
 
 	const columns = images.length % 3 === 0 ? "sm:grid-cols-3" : "sm:grid-cols-2";
+	const allLandscape = images.every(
+		(image) => image.orientation === "landscape",
+	);
 
 	return (
 		<div className={`mt-10 grid gap-3 sm:gap-5 ${columns}`}>
@@ -227,7 +231,11 @@ function Gallery({ images }: { images: NonNullable<Section["images"]> }) {
 				<div
 					key={image.file}
 					className={`group relative overflow-hidden ${
-						image.orientation === "portrait" ? "aspect-[3/4]" : "aspect-[4/5]"
+						allLandscape
+							? "aspect-[4/3]"
+							: image.orientation === "portrait"
+								? "aspect-[3/4]"
+								: "aspect-[4/5]"
 					}`}
 				>
 					<ProjectImage {...image} />

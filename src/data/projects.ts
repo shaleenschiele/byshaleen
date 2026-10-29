@@ -18,6 +18,10 @@ export type ImageSpec = {
 	tone?: Tone;
 	/** Portrait photos get a constrained layout when shown alone. */
 	orientation?: "portrait" | "landscape";
+	/** Which side of the photo the portrait card on the landing page keeps. */
+	cardFocus?: "left" | "right";
+	/** CSS object-position for photos that get cropped, e.g. "50% 75%". */
+	position?: string;
 };
 
 export type Section = {
@@ -42,6 +46,8 @@ export type Project = {
 	tagline: string;
 	intro: string;
 	cover: ImageSpec;
+	/** Photo for the landing-page card when it should differ from the cover. */
+	card?: ImageSpec;
 	/** Optional call-to-action shown under the intro. */
 	link?: { label: string; href: string };
 	sections: Section[];
@@ -63,6 +69,7 @@ type RawProject = {
 	slug: string;
 	status: Project["status"];
 	cover: RawImage;
+	card?: RawImage;
 	link?: { label: L<string>; href: string };
 	text: L<{
 		title: string;
@@ -82,11 +89,12 @@ const RAW_PROJECTS: RawProject[] = [
 		slug: "brandenburg-family-home",
 		status: "complete",
 		cover: {
-			file: "brandenburg-family-home/cover.jpg",
+			file: "brandenburg-family-home/after-1.jpg",
 			alt: l(
 				"Living room of the Brandenburg Family Home with a sectional sofa, large artwork and crystal chandelier.",
 			),
 			tone: "sage",
+			cardFocus: "right",
 		},
 		text: {
 			en: {
@@ -115,17 +123,22 @@ const RAW_PROJECTS: RawProject[] = [
 			},
 			{
 				heading: l("The result"),
-				body: l(["More photos of the finished room will follow here soon."]),
 				images: [
 					{
 						file: "brandenburg-family-home/after-1.jpg",
-						alt: l("The finished living room."),
+						alt: l(
+							"The finished living area with a grey sectional sofa, a glass coffee table, a green armchair and large artwork.",
+						),
 						tone: "warm",
+						orientation: "landscape",
 					},
 					{
 						file: "brandenburg-family-home/after-2.jpg",
-						alt: l("The finished dining area."),
+						alt: l(
+							"The finished dining area with a glass-bubble chandelier, a sideboard and a white storage wall.",
+						),
 						tone: "warm",
+						orientation: "landscape",
 					},
 				],
 			},
@@ -135,9 +148,17 @@ const RAW_PROJECTS: RawProject[] = [
 		slug: "p-berg-bedroom",
 		status: "complete",
 		cover: {
-			file: "p-berg-bedroom/cover.jpg",
+			file: "p-berg-bedroom/walls-2.jpg",
 			alt: l(
-				"Wardrobe with olive doors and a mirrored door, abstract painting and a leather wingback chair with brass arc lamp.",
+				"Bedroom with dusty pink limewash walls, a bird-of-paradise plant, a floating bedside table with a stone lamp and a bed with terracotta bedding.",
+			),
+			tone: "blush",
+			position: "50% 62%",
+		},
+		card: {
+			file: "p-berg-bedroom/walls-1.jpg",
+			alt: l(
+				"Corner of the bedroom with dusty pink limewash walls, stucco cornice, a bird-of-paradise plant and a bed with an orange duvet.",
 			),
 			tone: "blush",
 		},
@@ -311,6 +332,7 @@ function resolveProject(raw: RawProject, locale: Locale): Project {
 		status: raw.status,
 		...raw.text[locale],
 		cover: resolveImage(raw.cover, locale),
+		card: raw.card && resolveImage(raw.card, locale),
 		link: raw.link && {
 			label: raw.link.label[locale],
 			href: raw.link.href,
