@@ -33,6 +33,7 @@ const en = {
 			"Eight years in corporate taught me structure and strategy. My eye for design did the rest.",
 			"My style is best described as ‘moody modern’: rich colours, a mix of materials, organic shapes, and old furniture happily coexisting with new.",
 			"Located in Berlin, Germany, I offer on-site as well as remote support and specialise in renter-friendly (Altbau) design: turning the flat you’re renting (no structural changes, no landlord drama, no deposit at risk) into somewhere that actually feels like yours. Usually it’s small, deliberate decisions, not a full-on renovation, doing the heavy lifting.",
+			"Of course, I’m also happy to support the redesign of commercial spaces (e.g. coffee shops, hair salons, beauty studios, Pilates studios, etc.) or owner-occupied homes.",
 			"Work with me and expect a clear process, a bit of gentle pushback on your own ideas, clever workarounds and solutions for the things you can’t change structurally, and, despite the seriousness with which I take cushion placement, quite a lot of fun along the way.",
 		],
 	},
