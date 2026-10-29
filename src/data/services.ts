@@ -60,24 +60,24 @@ const RAW_SERVICES: RawService[] = [
 			},
 			de: {
 				title: "Flat Therapy",
-				tagline: "Eine Stunde. Ein Problem. Endlich gelöst.",
+				tagline: "Eine Stunde. Ein\u00A0Problem. Endlich gelöst.",
 				teaser: "89 € Einführungspreis",
 				intro: [
-					"Das Sofa, das am falschen Platz steht. Die Wandfarbe, die aus der Reihe tanzt. Die Ecke, mit der keiner etwas anzufangen weiß. Schick mir ein paar Fotos, wir besprechen alles im Videocall, und du gehst mit einer klaren To-do-Liste statt mit einem weiteren Pinterest-Board. Paare willkommen. Ich habe schon Schlimmeres geschlichtet als einen Teppich.",
+					"Das Sofa, das am falschen Platz steht. Die Wandfarbe, die aus der Reihe tanzt. Die Ecke, mit der keiner etwas anzufangen weiß. Schick mir ein paar Fotos, wir besprechen alles im Videocall, und du gehst mit einer klaren To-do-Liste statt mit einem weiteren Pinterest-Board direkt in die Umsetzung. Paare sind herzlich willkommen.",
 				],
 				included: [
 					"Online-Fragebogen, damit ich das Problem verstehe",
-					"60-Minuten-Videocall, um das Problem besser zu verstehen und konkrete Lösungen für deinen Raum zu finden",
+					"60-Minuten-Videocall, um konkrete Lösungen für deinen Raum zu finden",
 					"Eine schriftliche To-do-Liste und Zusammenfassung des Calls innerhalb von 48 Stunden, damit du die besprochenen Änderungen wirklich umsetzen kannst",
 				],
 				goodToKnow: [
-					"Wenn du innerhalb von 30 Tagen ein Room Recipe oder den Full Design Service buchst, wird die Gebühr für Flat Therapy vollständig angerechnet.",
+					"Wenn du innerhalb von 30 Tagen ein Room Recipe oder den Full Design Service buchst, werden die Kosten für Flat Therapy vollständig angerechnet.",
 				],
 				price: {
 					headline: "89 €",
 					lines: [
 						"Einführungspreis bis 28. Februar 2027",
-						"Bei dir zu Hause in Berlin: 90 Min. für 229 € inkl. 19 % MwSt.",
+						"Bei dir zu Hause in Berlin: 90 Min. für 129 € inkl. 19 % MwSt.",
 					],
 				},
 				cta: { label: "Jetzt buchen" },
@@ -133,16 +133,16 @@ const RAW_SERVICES: RawService[] = [
 			},
 			de: {
 				title: "Furniture Sourcing & Vintage Hunt",
-				tagline: "Du weißt, was du willst. Dir fehlen nur die Abende.",
+				tagline: "Du weißt, was du willst. Dir fehlt nur die Zeit.",
 				teaser: "ab 129 €",
 				intro: [
-					"Tschüss, 47 offene Tabs um Mitternacht.",
+					"Bye bye 47 offene Tabs um Mitternacht.",
 					"Du suchst etwas Neues? Du weißt, dass du ein Sofa brauchst. Das Internet hat 3.000 davon, und irgendwie sieht keins richtig aus. Ich übernehme das Scrollen und komme mit einer kuratierten Auswahl zurück, die zu deinem Raum, deinen Maßen und deinem Budget passt.",
 					"Lust auf etwas mit Vergangenheit? Ich durchstöbere Berlins Vintage-Läden und Flohmärkte persönlich oder suche online in Auktionshäusern. Perfekt, wenn du neu in der Stadt bist und noch nicht weißt, wo die guten Sachen stecken.",
 				],
 				included: [
 					"Online-Fragebogen, in dem du angibst, was du suchst (inkl. Maße und Budget)",
-					"15-Minuten-Kickoff-Call, damit ich deinen Geschmack verstehe, bevor ich losjage",
+					"15-Minuten-Kickoff-Call, damit ich deinen Geschmack treffe, bevor ich auf die Suche gehe",
 					"Drei kuratierte Optionen pro Möbelstück, mit Maßen, Preisen und Links",
 				],
 				notIncluded:
@@ -170,7 +170,7 @@ const RAW_SERVICES: RawService[] = [
 					],
 				},
 				cta: {
-					label: "Demnächst",
+					label: "Coming soon",
 					note: "Noch in Arbeit, daher noch nicht buchbar. Sobald die Links bereit sind, teile ich sie mit dir!",
 				},
 			},
@@ -234,9 +234,9 @@ const RAW_SERVICES: RawService[] = [
 					"2D-Grundriss mit Möblierung",
 					"3D-Raumskizze mit deinen Möbelfavoriten (nicht fotorealistisch)",
 					"Einkaufsliste mit bis zu 10 Produkten, abgestimmt auf das, was du schon besitzt",
-					"Alles in einer PDF, innerhalb von 10 Werktagen",
+					"Alles in einem PDF, innerhalb von 10 Werktagen",
 					"Ein 30-Minuten-Videocall zu einem beliebigen Zeitpunkt im Prozess",
-					"Eine Änderungsrunde per E-Mail / WhatsApp innerhalb von 14 Tagen nach Lieferung",
+					"Eine Änderungsrunde per E-Mail oder WhatsApp innerhalb von 14 Tagen nach Lieferung",
 				],
 				notIncluded:
 					"Zusätzliche Videocalls, ein Besuch bei dir zu Hause, fotorealistische 3D-Renderings, Bestellung und Lieferung, zusätzliche Räume oder weitere Änderungsrunden. Extras sind für 95 € pro Stunde möglich.",
@@ -251,14 +251,14 @@ const RAW_SERVICES: RawService[] = [
 				},
 				goodToKnow: [
 					"Wenn sich dein Raum nicht für ein Room Recipe eignet, sage ich dir das innerhalb von 2 Werktagen und erstatte dir den vollen Betrag.",
-					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen ein Room Recipe, wird die Gebühr vollständig angerechnet.",
+					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen ein Room Recipe, werden dir die Kosten vollständig angerechnet.",
 					"Einige Links in deiner Einkaufsliste können Affiliate-Links sein. Dafür erhalte ich unter Umständen eine kleine Provision. Sie entscheidet nie darüber, was ich empfehle.",
 				],
 				price: {
 					headline: "549 €",
 					lines: [
 						"Inkl. 19 % MwSt. · Einführungspreis bis 28. Februar 2027",
-						"Ein Raum bis 30 m². Zusätzliche Räume, weitere Änderungsrunden und 3D-Ansichten auf Anfrage.",
+						"Ein Raum bis 30 m². Zusätzliche Räume, weitere Änderungswünsche und 3D-Ansichten auf Anfrage.",
 					],
 				},
 				cta: { label: "Room Recipe jetzt buchen" },
@@ -334,12 +334,12 @@ const RAW_SERVICES: RawService[] = [
 				howItWorks: {
 					ordered: false,
 					items: [
-						"Sicher per Stripe bezahlen",
+						"Sicher per Stripe bezahlen.",
 						"20 % bei Annahme des Angebots, 50 % bei der Präsentation des Designkonzepts, 30 % bei Lieferung des finalen Designs.",
 					],
 				},
 				goodToKnow: [
-					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen den Full Design Service, wird die Gebühr vollständig angerechnet.",
+					"Du möchtest erst sprechen? Buche Flat Therapy. Buchst du innerhalb von 30 Tagen den Full Design Service, werden dir die Kosten vollständig angerechnet.",
 					"Einige Links in deiner Einkaufsliste können Affiliate-Links sein. Dafür erhalte ich unter Umständen eine kleine Provision. Sie entscheidet nie darüber, was ich empfehle.",
 					"Du möchtest, dass ich dabei bleibe, bis das letzte Bild hängt? Für 95 € pro Stunde koordiniere ich Bestellungen und Lieferungen, steuere das Projekt und stimme mich mit deinen Handwerkern ab.",
 				],
@@ -351,7 +351,7 @@ const RAW_SERVICES: RawService[] = [
 					],
 				},
 				cta: {
-					label: "Demnächst",
+					label: "Coming soon",
 					note: "Noch in Arbeit, daher noch nicht buchbar.",
 				},
 			},

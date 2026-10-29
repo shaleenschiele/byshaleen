@@ -14,7 +14,7 @@ export const TESTIMONIALS: Testimonial[] = [
 		project: l("Bedroom", "Schlafzimmer"),
 		quote: l(
 			"Working with her on our bedroom renovation was a delight. She understood our style and needs, avoiding a one-size-fits-all approach. Flexible and open to feedback, she made us feel heard throughout the project. Her blend of creativity and client focus resulted in a uniquely personal space. I highly recommend her as an interior designer.",
-			"Die Zusammenarbeit bei unserer Schlafzimmerrenovierung war eine Freude. Sie hat unseren Stil und unsere Bedürfnisse verstanden und auf Lösungen von der Stange verzichtet. Flexibel und offen für Feedback, hat sie dafür gesorgt, dass wir uns während des ganzen Projekts gehört gefühlt haben. Aus ihrer Mischung aus Kreativität und Kundenorientierung ist ein ganz persönlicher Raum entstanden. Ich kann sie als Interior Designerin uneingeschränkt empfehlen.",
+			"Die Zusammenarbeit mit ihr bei der Renovierung unseres Schlafzimmers war super angenehm. Sie hat unseren Stil und unsere Bedürfnisse schnell und gut verstanden. Dank ihrer Flexibilität und Offenheit für Feedback hatten wir während des gesamten Projekts das Gefühl, dass wir in eine gemeinsame Richtung arbeiten. Ihre Kombination aus Kreativität und Kundenorientierung hat zu einem einzigartigen, ganz persönlichen Raum geführt. Wir können sie als Interior Designerin wärmstens empfehlen.",
 		),
 	},
 	{

@@ -76,7 +76,7 @@ function ServiceItem({
 						<span className="block font-display text-3xl leading-tight sm:text-4xl md:text-5xl">
 							{service.title}
 						</span>
-						<span className="mt-2 block font-display text-lg italic sm:text-xl">
+						<span className="mt-2 block font-display text-lg italic text-balance sm:text-xl">
 							{service.tagline}
 						</span>
 						<span className="mt-3 block font-body text-xs tracking-[0.15em] uppercase opacity-70">

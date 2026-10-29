@@ -82,7 +82,7 @@ function ProjectCard({ project }: { project: Project }) {
 				<p className="font-body text-xs tracking-[0.15em] uppercase opacity-80">
 					{project.type}
 				</p>
-				<p className="mt-2 font-display text-xl italic leading-snug">
+				<p className="mt-2 font-display text-xl italic leading-snug text-balance">
 					{project.tagline}
 				</p>
 			</div>

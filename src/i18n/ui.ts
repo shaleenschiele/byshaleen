@@ -89,14 +89,14 @@ const de: UiStrings = {
 	meta: {
 		title: "by.shaleen — Interior-Design-Studio",
 		description:
-			"Mieterfreundliches Interior Design in Berlin. Flat Therapy, Room Recipe, Full Design Service und Möbel-Sourcing mit by.shaleen.",
+			"Renter-friendly Interior Design in Berlin. Flat Therapy, Room Recipe, Full Design Service und Möbel-Sourcing mit by.shaleen.",
 	},
 	nav: {
 		home: "Start",
 		about: "Über mich",
 		services: "Leistungen",
 		projects: "Projekte",
-		references: "Kundenstimmen",
+		references: "Reviews",
 		contact: "Kontakt",
 		sections: "Abschnitte",
 		mainMenu: "Hauptmenü",
@@ -105,9 +105,9 @@ const de: UiStrings = {
 		language: "Sprache",
 	},
 	hero: {
-		lines: ["Mach dein Zuhause"],
-		accent: "persönlich",
-		kicker: "Mieterfreundliches Design",
+		lines: ["Ein Zuhause, das"],
+		accent: "sich nach dir anfühlt",
+		kicker: "Renter-friendly Design",
 		masthead: { right: "Vor Ort & remote" },
 		alt: "Ein gemütliches Sofa mit zwei Kissen, eines in Creme, eines in Rostrot, im warmen Sonnenlicht.",
 	},
@@ -115,10 +115,11 @@ const de: UiStrings = {
 		heading: "Über mich",
 		alt: "Shaleen, Gründerin von byshaleen.com, in gestreiftem Hemd und mit Bandana, lächelt in die Kamera und sitzt mit einem Cocktail an einem Tisch.",
 		paragraphs: [
-			"Acht Jahre Konzern haben mir Struktur und Strategie beigebracht. Mein Auge für Design hat den Rest erledigt.",
-			"Mein Stil lässt sich am besten als „Moody Modern“ beschreiben: satte Farben, Materialmix, organische Formen und alte Möbel, die friedlich neben neuen stehen.",
-			"Ich arbeite von Berlin aus, vor Ort wie auch remote, und habe mich auf mieterfreundliches Design (vor allem im Altbau) spezialisiert: Aus der Wohnung, die du mietest (ohne bauliche Veränderungen, ohne Ärger mit dem Vermieter, ohne Risiko für die Kaution), wird ein Ort, der sich wirklich nach dir anfühlt. Meist sind es kleine, gezielte Entscheidungen, die die schwere Arbeit erledigen, kein kompletter Umbau.",
-			"Wenn wir zusammenarbeiten, erwartet dich ein klarer Prozess, ein bisschen sanfter Widerspruch zu deinen eigenen Ideen, clevere Workarounds für alles, was sich baulich nicht ändern lässt, und, trotz des Ernstes, mit dem ich Kissenplatzierung nehme, ziemlich viel Spaß dabei.",
+			"Über acht Jahre in der Tech-Branche haben mir Struktur und Strategie beigebracht. Mein Gespür für Design hat den Rest erledigt und so bin ich vom Projektmanagement ins Interior Design gewechselt.",
+			"Mein Stil lässt sich am besten als „moody-modern“ beschreiben: satte Farben, eine Mischung aus Materialien, organische Formen und alte Möbel, die harmonisch mit neuen koexistieren.",
+			"Von Berlin aus biete ich sowohl Vor-Ort- als auch Online-Betreuung an und habe mich auf mieterfreundliches (Altbau-)Design spezialisiert: Ich verwandle die Wohnung, die du mietest (keine baulichen Veränderungen, kein Ärger mit dem Vermieter, keine Gefahr für deine Kaution), in einen Ort, der sich wirklich wie dein Zuhause anfühlt. Meistens sind es kleine, wohlüberlegte Entscheidungen und keine umfassende Renovierung, die den entscheidenden Unterschied machen.",
+			"Natürlich unterstütze ich auch gerne bei der Umgestaltung gewerblicher Flächen (z. B. Coffee-Shops, Friseursalons, Kosmetikstudios, Pilatesstudios etc.) oder Wohneigentum.",
+			"In der Zusammenarbeit kannst du klare und transparente Kommunikation erwarten. Ich nehme dich Schritt für Schritt auf dem Weg mit und gebe auch mal einen freundlichen Pushback, wenn ich denke, dass wir deine eigenen Ideen in eine noch bessere Richtung lenken könnten. Freu dich außerdem auf clevere Workarounds und Lösungen für Probleme, die du baulich nicht ändern kannst. Am Ende ist es mir aber vor allem wichtig, dass jedes Designprojekt neben fachlicher Ernsthaftigkeit auch Freude bei der Neugestaltung mit sich bringt.",
 		],
 	},
 	services: {
@@ -135,7 +136,7 @@ const de: UiStrings = {
 		subheading:
 			"Ausgewählte Arbeiten, vom Altbau-Schlafzimmer bis zum Familienhaus.",
 		inProgress: "In Arbeit",
-		comingSoon: "Demnächst",
+		comingSoon: "Coming soon",
 		allProjects: "Alle Projekte",
 		nextProject: "Nächstes Projekt",
 		wantARoom: "Du wünschst dir so einen Raum?",
@@ -157,7 +158,7 @@ const de: UiStrings = {
 		footerTail: "und wir finden es gemeinsam heraus.",
 	},
 	references: {
-		heading: "Kundenstimmen",
+		heading: "Reviews",
 	},
 	contact: {
 		heading: "Noch Fragen?",

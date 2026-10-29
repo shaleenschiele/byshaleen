@@ -63,7 +63,7 @@ function ProjectHero({ project }: { project: Project }) {
 				<ProjectImage {...project.cover} eager />
 			</div>
 			<div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent via-45% to-transparent" />
-			<div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/25 to-transparent" />
+			<div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/35 to-transparent" />
 
 			<div
 				className={`absolute inset-x-0 top-0 z-10 text-center ${
@@ -74,7 +74,7 @@ function ProjectHero({ project }: { project: Project }) {
 					to="/{-$locale}"
 					params={{ locale: localeParam(locale) }}
 					hash="projects"
-					className="font-body text-xs tracking-[0.18em] text-ecru uppercase underline-offset-4 hover:underline"
+					className="font-body text-xs tracking-[0.18em] text-ecru uppercase underline-offset-4 [text-shadow:0_1px_8px_rgb(0_0_0/0.5)] hover:underline"
 				>
 					← {ui.projects.allProjects}
 				</Link>
@@ -85,7 +85,7 @@ function ProjectHero({ project }: { project: Project }) {
 					<p className="font-body text-xs tracking-[0.2em] uppercase">
 						{project.location}
 					</p>
-					<h1 className="mt-3 font-display text-5xl uppercase leading-[1.02] tracking-wide sm:text-7xl lg:text-8xl">
+					<h1 className="mt-3 font-display text-[length:clamp(2rem,9.5vw,3rem)] uppercase leading-[1.02] tracking-wide sm:text-7xl lg:text-8xl">
 						{project.shortTitle}
 					</h1>
 				</div>

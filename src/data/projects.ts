@@ -92,7 +92,7 @@ const RAW_PROJECTS: RawProject[] = [
 			file: "brandenburg-family-home/after-1.jpg",
 			alt: l(
 				"Living room of the Brandenburg Family Home with a sectional sofa, large artwork and crystal chandelier.",
-				"Wohnzimmer des Familienhauses in Brandenburg mit Ecksofa, großem Kunstwerk und Kristalllüster.",
+				"Wohnzimmer des Familienhauses in Brandenburg mit Ecksofa, großem Kunstwerk und Kristallkronleuchter.",
 			),
 			tone: "sage",
 			cardFocus: "right",
@@ -116,9 +116,9 @@ const RAW_PROJECTS: RawProject[] = [
 				type: "Wohn- & Esszimmer",
 				scope: "Konzept, Layout, Moodboards, Design-Boards, Sourcing",
 				tagline:
-					"Ein langes Wohn- und Esszimmer, neu gedacht für eine vierköpfige Familie.",
+					"Ein schlauchförmiges Wohn- und Esszimmer, neu gedacht für eine vierköpfige Familie.",
 				intro:
-					"Ein großer, schlauchförmiger Wohn- und Essraum, verwandelt in ein stimmiges Zuhause für eine Familie mit zwei kleinen Kindern. Die Aufgabe: ein gemütlicher Raum, der ruhig und lebendig zugleich ist, in dem moderne Elemente auf Vintage-Stücke treffen und der Platz für die ganze Familie und für Zeit zu zweit bietet. Dazu braucht er mehr Stauraum, schmutzabweisende Materialien für den Alltag mit Kleinkindern und eine Gestaltung, die die Breite des Raums betont, um von der Länge abzulenken.",
+					"Ein großer, schlauchförmiger Wohn- und Essraum, verwandelt in ein stimmiges Zuhause für eine Familie mit zwei kleinen Kindern. Die Mission: ein gemütlicher Raum, der ruhig und lebendig zugleich ist, in dem moderne Elemente auf Vintage-Stücke treffen und der Platz für die ganze Familie und für Zeit zu zweit bietet. Dazu brauchte er mehr Stauraum, schmutzabweisende Materialien für den Alltag mit Kleinkindern und eine Gestaltung, die die Breite des Raums betont, um von der Länge abzulenken.",
 			},
 		},
 		sections: [
@@ -126,10 +126,10 @@ const RAW_PROJECTS: RawProject[] = [
 				heading: l("Mood & palette", "Mood & Palette"),
 				body: l(
 					[
-						"Organic shapes meet clean lines. Abstract art, silver metal and glass accents, soft warm fabrics and plenty of wood, plus new architectural elements: ceiling beams and a wall projection that give the long room some structure.",
+						"Organic shapes meet clean lines. Abstract art, silver metal and glass accents, soft warm fabrics and plenty of wood.",
 					],
 					[
-						"Organische Formen treffen auf klare Linien. Abstrakte Kunst, silberne Metall- und Glasakzente, weiche, warme Stoffe und viel Holz, dazu neue architektonische Elemente: Deckenbalken und ein Wandvorsprung, die dem langen Raum Struktur geben.",
+						"Organische Formen treffen auf klare Linien. Abstrakte Kunst, silberne Metall- und Glasakzente, weiche, warme Stoffe und viel Holz.",
 					],
 				),
 				palette: [
@@ -144,8 +144,8 @@ const RAW_PROJECTS: RawProject[] = [
 					{
 						file: "brandenburg-family-home/after-1.jpg",
 						alt: l(
-							"The finished living area with a grey sectional sofa, a glass coffee table, a green armchair and large artwork.",
-							"Der fertige Wohnbereich mit grauem Ecksofa, Glascouchtisch, grünem Sessel und großem Kunstwerk.",
+							"The finished living area with a beige sectional sofa, a glass coffee table, a green vintage armchair, large artwork and a hidden TV corner.",
+							"Der fertige Wohnbereich mit beigem Ecksofa, Glascouchtisch, grünem Vintage-Sessel, großem Kunstwerk und einer unauffälligen TV-Ecke.",
 						),
 						tone: "warm",
 						orientation: "landscape",
@@ -201,9 +201,9 @@ const RAW_PROJECTS: RawProject[] = [
 				type: "Schlafzimmer · Altbau",
 				scope: "Farbkonzept, Stauraum, Beleuchtung, DIY-Upgrades",
 				tagline:
-					"Ein Altbau-Schlafzimmer, neu gedacht um das, was schon da war.",
+					"Ein Altbau-Schlafzimmer, das sich zunutze macht, was schon da war.",
 				intro:
-					"Weiße Wände, ein Pappkarton und ein Ledersessel, in die Ecke geschoben. Dieses Altbau-Schlafzimmer hatte Stuck und gutes Parkett, aber keine Haltung. Die Aufgabe: ein ruhiges, gemütliches Zimmer mit mehr Stauraum, das den Platz besser nutzt und vorhandenen Möbeln eine neue Rolle gibt, statt sie zu ersetzen.",
+					"Weiße Wände, ein Pappkarton und ein Ledersessel, in die Ecke geschoben. Dieses Altbau-Schlafzimmer hatte Stuck und gutes Parkett, aber keinen Charakter. Die Mission: ein ruhiges, gemütliches Zimmer mit mehr Stauraum, das den Platz besser nutzt und vorhandenen Möbeln eine neue Rolle gibt, statt sie zu ersetzen.",
 			},
 		},
 		sections: [
@@ -339,10 +339,10 @@ const RAW_PROJECTS: RawProject[] = [
 				type: "Gästezimmer / Büro · Altbau",
 				scope:
 					"Farbkonzept, Layout, Stauraumlösungen, Verbindung von Gäste- und Arbeitszimmer",
-				statusLabel: "Demnächst",
-				tagline: "Ein Gästezimmer, das auch Büro ist, ganz ohne Büro-Vibe.",
+				statusLabel: "Coming soon",
+				tagline: "Ein Gästezimmer, das auch Büro ist, ganz ohne Office-Vibe.",
 				intro:
-					"Ein Raum, zwei Leben: tagsüber ein ruhiger Arbeitsplatz, zwei- bis dreimal im Monat ein gemütliches Bett für Besuch. Heute ist der Raum halb Gästezimmer, halb Wäscheecke, und das eigentliche Büro sitzt in der Küche. Die Aufgabe: ein Schreibtisch mit Platz für einen Monitor und ein richtiges Gästebett oder Schlafsofa, dazu Stauraum für Bastelsachen, Jacken und Kleidung, der Wäscheständer außer Sicht. Alles gemütlich, warm und klar, ohne Büro-Vibe und ohne Silber. Schrank und Schreibtisch bleiben, Teppich, Deckenlampe und Tapete dürfen gehen.",
+					"Ein Raum, zwei Leben: tagsüber ein ruhiger Arbeitsplatz, zwei- bis dreimal im Monat ein gemütliches Bett für Besuch. Heute ist der Raum halb Gästezimmer, halb Wäscheecke, und das eigentliche Büro sitzt in der Küche. Die Mission: ein Schreibtisch mit Platz für einen Monitor und ein richtiges Gästebett oder Schlafsofa, dazu Stauraum für Bastelsachen, Jacken und Kleidung. Alles gemütlich, warm und klar, ohne Büro-Vibe und ohne Silber. Schrank und Schreibtisch bleiben, Teppich, Deckenlampe und Tapete dürfen gehen.",
 			},
 		},
 		sections: [],
@@ -386,7 +386,7 @@ const RAW_PROJECTS: RawProject[] = [
 				type: "3-Zimmer-Wohnung · Altbau",
 				scope:
 					"Renovierung von Küche und Bad, Gestaltung von Gästezimmer, Wohnzimmer und Schlafzimmer",
-				statusLabel: "Demnächst",
+				statusLabel: "Coming soon",
 				tagline:
 					"Eine 130 Jahre alte Gründerzeitwohnung, irgendwo zwischen Baustelle und Zuhause.",
 				intro:

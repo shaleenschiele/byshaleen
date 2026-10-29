@@ -37,13 +37,20 @@ function Home() {
 	);
 }
 
+/** Phone headline size: the German lines are longer, so they need a smaller type size to fit on one line each. */
+const HERO_FS_MOBILE: Record<Locale, string> = {
+	en: "[--hero-fs:clamp(3rem,15vw,4.5rem)]",
+	de: "[--hero-fs:clamp(2rem,9.2vw,4rem)]",
+};
+
 function Hero() {
 	const ui = useUi();
+	const locale = useLocale();
 
 	return (
 		<section
 			id="top"
-			className="group relative min-h-[max(100svh,36rem)] overflow-hidden bg-ink text-warm [--hero-fs:clamp(3rem,15vw,4.5rem)] sm:[--hero-fs:clamp(2rem,8.4vw,8.5rem)]"
+			className={`group relative min-h-[max(100svh,36rem)] overflow-hidden bg-ink text-warm ${HERO_FS_MOBILE[locale]} sm:[--hero-fs:clamp(2rem,8.4vw,8.5rem)]`}
 		>
 			<img
 				src="/images/hero-sofa.webp"
@@ -116,6 +123,16 @@ function About() {
 /** Opening quotation mark per language (English “…”, German „…“). */
 const OPENING_QUOTE: Record<Locale, string> = { en: "“", de: "„" };
 
+/**
+ * The English “ hangs from the top of its line and tucks into the text below;
+ * the German „ sits on the baseline, so the text must not be pulled up into it.
+ */
+const FEATURED_TEXT_PULL: Record<Locale, string> = {
+	en: "-mt-3 sm:-mt-6 md:-mt-8",
+	de: "mt-3",
+};
+const PLAIN_TEXT_PULL: Record<Locale, string> = { en: "-mt-3", de: "mt-2" };
+
 function Testimonials() {
 	const ui = useUi();
 	const featured = TESTIMONIALS.find((testimonial) => testimonial.featured);
@@ -184,11 +201,13 @@ function FeaturedQuote({ testimonial }: { testimonial: Testimonial }) {
 			<blockquote className="order-1 md:order-2 md:col-span-9">
 				<span
 					aria-hidden="true"
-					className="block font-display text-6xl leading-none opacity-30 sm:text-7xl md:text-8xl"
+					className={`block font-display text-6xl leading-none opacity-30 sm:text-7xl md:text-8xl`}
 				>
 					{OPENING_QUOTE[locale]}
 				</span>
-				<p className="-mt-3 font-display text-xl italic leading-snug sm:-mt-6 sm:text-3xl sm:leading-[1.25] md:-mt-8 md:text-4xl">
+				<p
+					className={`${FEATURED_TEXT_PULL[locale]} font-display text-xl italic leading-snug sm:text-3xl sm:leading-[1.25] md:text-4xl`}
+				>
 					{testimonial.quote[locale]}
 				</p>
 			</blockquote>
@@ -210,11 +229,13 @@ function PlainQuote({
 			<blockquote>
 				<span
 					aria-hidden="true"
-					className="block font-display text-6xl leading-none opacity-30"
+					className={`block font-display text-6xl leading-none opacity-30`}
 				>
 					{OPENING_QUOTE[locale]}
 				</span>
-				<p className="-mt-3 font-display text-xl italic leading-snug sm:text-2xl">
+				<p
+					className={`${PLAIN_TEXT_PULL[locale]} font-display text-xl italic leading-snug sm:text-2xl`}
+				>
 					{testimonial.quote[locale]}
 				</p>
 			</blockquote>
