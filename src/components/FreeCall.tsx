@@ -17,6 +17,8 @@ export function FreeCallBlock() {
 				href={FREE_CALL_URL}
 				target="_blank"
 				rel="noopener noreferrer"
+				data-umami-event="free-call-click"
+				data-umami-event-source="services"
 				className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-wine px-8 py-3 font-body text-sm font-semibold tracking-wide text-wine uppercase transition-colors hover:bg-wine hover:text-cream"
 			>
 				{ui.call.button} <span aria-hidden="true">→</span>
@@ -40,6 +42,8 @@ export function FreeCallLink({
 			href={FREE_CALL_URL}
 			target="_blank"
 			rel="noopener noreferrer"
+			data-umami-event="free-call-click"
+			data-umami-event-source="link"
 			className={`underline underline-offset-4 hover:no-underline ${className}`}
 		>
 			{label ?? ui.call.link}

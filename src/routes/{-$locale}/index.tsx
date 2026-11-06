@@ -265,6 +265,7 @@ function ContactFooter() {
 				</h2>
 				<a
 					href={`mailto:${CONTACT_EMAIL}`}
+					data-umami-event="email-click"
 					className="rounded-full bg-warm px-8 py-4 font-body text-base font-semibold text-wine shadow-lg transition-colors hover:bg-cream sm:px-10"
 				>
 					{CONTACT_EMAIL}
@@ -282,6 +283,7 @@ function ContactFooter() {
 					target="_blank"
 					rel="noopener noreferrer"
 					title={ui.contact.instagram}
+					data-umami-event="instagram-click"
 					className="flex w-fit items-center gap-3 underline-offset-4 hover:underline"
 				>
 					<InstagramIcon className="h-6 w-6" />

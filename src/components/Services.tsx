@@ -219,6 +219,8 @@ function ServiceCta({ service }: { service: Service }) {
 				href={href}
 				target="_blank"
 				rel="noopener noreferrer"
+				data-umami-event="service-booking-click"
+				data-umami-event-service={service.id}
 				className="mt-8 inline-flex items-center gap-2 rounded-full bg-cream px-8 py-3 font-body text-sm font-semibold tracking-wide text-wine uppercase"
 			>
 				{cta.label} <span aria-hidden="true">→</span>

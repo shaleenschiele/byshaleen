@@ -6,7 +6,6 @@ import {
 	useParams,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import { Analytics } from "@vercel/analytics/react";
 import { toLocale } from "#/i18n/locale";
 
 import appCss from "../styles.css?url";
@@ -54,6 +53,13 @@ export const Route = createRootRoute({
 				crossOrigin: "anonymous",
 			},
 		],
+		scripts: [
+			{
+				src: "https://cloud.umami.is/script.js",
+				defer: true,
+				"data-website-id": "6b835b3e-29db-427c-9efb-fdb376c46157",
+			},
+		],
 	}),
 	shellComponent: RootDocument,
 });
@@ -82,7 +88,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 						},
 					]}
 				/>
-				<Analytics />
 				<Scripts />
 			</body>
 		</html>

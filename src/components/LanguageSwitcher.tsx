@@ -44,6 +44,8 @@ export function LanguageSwitcher() {
 					className,
 					lang: locale,
 					hrefLang: locale,
+					"data-umami-event": "language-switch",
+					"data-umami-event-to": locale,
 					"aria-label": locale === "de" ? "Deutsch" : "English",
 				};
 
